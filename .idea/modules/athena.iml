@@ -20,6 +20,7 @@
     <orderEntry type="library" name="sbt: com.fasterxml.jackson.core:jackson-core:2.6.7:jar" level="project" />
     <orderEntry type="library" name="sbt: com.fasterxml.jackson.core:jackson-databind:2.6.7.3:jar" level="project" />
     <orderEntry type="library" name="sbt: com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:2.6.7:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.syncron.amazonaws:simba-athena-jdbc-driver:2.0.2:jar" level="project" />
     <orderEntry type="library" name="sbt: commons-codec:commons-codec:1.11:jar" level="project" />
     <orderEntry type="library" name="sbt: commons-logging:commons-logging:1.2:jar" level="project" />
     <orderEntry type="library" name="sbt: joda-time:joda-time:2.8.1:jar" level="project" />
