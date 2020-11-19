@@ -20,12 +20,12 @@ trait S3Staging extends App {
       "AwsCredentialsProviderArguments=default;")
   val stmt: Statement = connection.createStatement()
 
-  val bucketname = "course8_aws11"
+  val bucketname = "course8-aws"
   val folder = "assignment8"
   val tripsname = "assignment1/trips/"
   val frequenciesname = "assignment1/frequencies/"
   val calendar_datename = "assignment1/calendar_dates/"
-  val tripfile = "assignment1/trips/trips.txt"
+  val tripfile = "trips/trips.txt"
   val frequencyfile= "assignment1/frequenciesname/frequencies.txt"
   val calendardatesfile ="assignment1/calenda_dates/calendar_dates.txt"
   val tloc= "/home/snehith/Documents/stm/trips.txt"
@@ -47,8 +47,8 @@ trait S3Staging extends App {
   }
   def upload(): Unit ={
     s3client.putObject(bucketname,tripfile,new File(tloc))
-    s3client.putObject(bucketname,tripfile,new File(floc))
-    s3client.putObject(bucketname,tripfile,new File(caloc))
+    s3client.putObject(bucketname,frequencyfile,new File(floc))
+    s3client.putObject(bucketname,calendardatesfile,new File(caloc))
   }
 
 }
